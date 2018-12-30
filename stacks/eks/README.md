@@ -18,7 +18,7 @@ terraform plan
 ```
 terraform apply
 ```
-6. Configure kubectl as documented [https://github.com/Kiran01bm/kubernetes-related/tree/master/eks/createViaConsole#configure-kubectl-to-connect-to-the-cluster](here)
+6. Configure kubectl as documented [here](https://github.com/Kiran01bm/kubernetes-related/tree/master/eks/createViaConsole#configure-kubectl-to-connect-to-the-cluster)
 7. Configure the kubectl to point to the created EKS cluster ex: Default cluster name is terraform-eks-demo
 ```
 aws eks update-kubeconfig --name terraform-eks-demo
