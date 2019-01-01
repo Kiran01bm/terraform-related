@@ -117,6 +117,7 @@ resource "aws_launch_configuration" "demo" {
   name_prefix                 = "terraform-eks-demo"
   security_groups             = ["${aws_security_group.demo-node.id}"]
   user_data_base64            = "${base64encode(local.demo-node-userdata)}"
+  key_name                    = "${var.key-name}"
 
   lifecycle {
     create_before_destroy = true
